@@ -1,0 +1,7 @@
+usethis::use_build_ignore("devtools_history.R")
+usethis::use_description()
+usethis::use_build_ignore("Rij.Rproj")
+usethis::use_build_ignore("renv.lock")
+usethis::use_build_ignore("renv")
+usethis::use_package("Rcpp")
+Rcpp::compileAttributes()

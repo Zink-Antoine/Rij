@@ -1,0 +1,19 @@
+Package: Rij
+Type: Package
+Title: R tools for image analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Antoine",
+           family = "Zink",
+           role = c("aut", "cre"),
+           email = "antoine.zink@culture.gouv.fr",
+           comment = c(ORCID = "https://orcid.org/0000-0001-7146-1101"))
+Description: some basic tools for image processing and analysis in R.
+url: https://github.com/Zink-Antoine/Rij
+BugReports: https://github.com/Zink-Antoine/Rij/issues
+License: CeCILL-2 | file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: Rcpp
+LinkingTo: Rcpp
