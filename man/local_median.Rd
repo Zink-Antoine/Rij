@@ -5,7 +5,7 @@
 \title{local_median
 calcul of median with size radius x radius}
 \usage{
-local_median(image, radius, bg = 0)
+local_median(im, radius, bg = 0)
 }
 \value{
 med_mat

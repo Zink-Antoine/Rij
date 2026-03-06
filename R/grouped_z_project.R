@@ -1,7 +1,7 @@
 ############## merged images
 
 #' grouped_z_project
-#' remove noise by deleting outliers
+#' merged images
 #'
 #' @inheritParams remove-noise
 #' @param grouped_size [numeric] (**with default**) number of image merged in a group
