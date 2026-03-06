@@ -1,5 +1,17 @@
-#profil selon l'axe temporel (z) pour la ROI rectangulaire sélectionnée
+#################Z profile
 
+#' Z.axis_profil
+#' profile following temporal (z) axis for selected ROI
+#'
+#' @inheritParams remove-noise
+#' @param x [numeric vector] (**with default**) pixel along x-axis (default x=seq(1,512))
+#' @param y  [numeric vector]  (**with default**) pixel along y-axis (default y=seq(1,512))
+#'
+#' @return tmp [array]
+#'
+#' @export
+#'
+#' @examples
 
 
 
