@@ -7,6 +7,13 @@ calcul of median with size radius x radius}
 \usage{
 local_median(im, radius, bg = 0)
 }
+\arguments{
+\item{im}{\link{array} (\strong{optional}) an image as matrix or array}
+
+\item{radius}{\link{numeric} (\strong{with default}) radius value (default radius=5)}
+
+\item{bg}{\link{numeric}  (\strong{with default}) background values (default bg=0)}
+}
 \value{
 med_mat
 }

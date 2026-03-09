@@ -3,7 +3,7 @@
 #' Z.axis_profil
 #' profile following temporal (z) axis for selected ROI
 #'
-#' @inheritParams remove-noise
+#' @inheritParams remove_noise
 #' @param x [numeric] (**with default**) pixel along x-axis (default x=seq(1,512))
 #' @param y  [numeric]  (**with default**) pixel along y-axis (default y=seq(1,512))
 #'
@@ -12,6 +12,11 @@
 #' @export
 #'
 #' @examples
+#'  \dontrun{
+#' Z<-Z.axis_profil(im,x=seq(50,75),seq(310,320))
+#' temp<-seq(25,445,5)
+#' plot(temp,Z,type="l",col="blue",xlab="Temperature (°C)",ylab="intensite")
+#' }
 
 
 

@@ -36,7 +36,7 @@ remove_noise<-function(im,radius=5,threshold=50,bg=0){
 #' local_median
 #' calcul of median with size radius x radius
 #'
-#' @inheritParams remove-noise
+#' @inheritParams remove_noise
 #'
 #' @return med_mat
 #'
@@ -44,16 +44,14 @@ remove_noise<-function(im,radius=5,threshold=50,bg=0){
 #'
 #' @export
 #'
-#' @examples
-#'
 
 local_median <- function(im, radius,bg=0) {
-  med_mat <- array(bg, dim=dim(image))
+  med_mat <- array(bg, dim=dim(im))
   Rcpp::sourceCpp("median.cpp")
-  for(k in 1:dim(image)[3]){
-    for (i in 1:(nrow(image)-radius)) {
-      for (j in 1:(ncol(image)-radius)) {
-        med_mat[i, j,k] <- cpp_med(image[seq(i,i + radius-1),seq(j,j+radius-1),k])
+  for(k in 1:dim(im)[3]){
+    for (i in 1:(nrow(im)-radius)) {
+      for (j in 1:(ncol(im)-radius)) {
+        med_mat[i, j,k] <- cpp_med(im[seq(i,i + radius-1),seq(j,j+radius-1),k])
 
       }
     }

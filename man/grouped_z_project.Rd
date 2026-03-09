@@ -8,6 +8,8 @@ merged images}
 grouped_z_project(im, grouped_size, FUN = sum)
 }
 \arguments{
+\item{im}{\link{array} (\strong{optional}) an image as matrix or array}
+
 \item{grouped_size}{\link{numeric} (\strong{with default}) number of image merged in a group}
 
 \item{FUN}{\link{function}  (\strong{with default})  function between the merged images (default FUN=sum)}
@@ -20,12 +22,7 @@ grouped_z_project
 merged images
 }
 \examples{
-\dontrun{
-ls<-list.files("images/",pattern = "tif$",full.names = TRUE)
-im<-terra::rast(ls)
-im\%>\%
-  as.array\%>\%
-    remove_noise(radius=5,bg=505)\%>\%
-      rast
+ \dontrun{
+tmp<-grouped_z_project(im,85)
 }
 }

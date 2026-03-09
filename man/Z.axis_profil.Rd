@@ -8,9 +8,11 @@ profile following temporal (z) axis for selected ROI}
 Z.axis_profil(im, x = seq(1, 512), y = seq(1, 512))
 }
 \arguments{
-\item{x}{\link{numeric vector} (\strong{with default}) pixel along x-axis (default x=seq(1,512))}
+\item{im}{\link{array} (\strong{optional}) an image as matrix or array}
 
-\item{y}{\link{numeric vector}  (\strong{with default}) pixel along y-axis (default y=seq(1,512))}
+\item{x}{\link{numeric} (\strong{with default}) pixel along x-axis (default x=seq(1,512))}
+
+\item{y}{\link{numeric}  (\strong{with default}) pixel along y-axis (default y=seq(1,512))}
 }
 \value{
 tmp \link{array}
@@ -18,4 +20,11 @@ tmp \link{array}
 \description{
 Z.axis_profil
 profile following temporal (z) axis for selected ROI
+}
+\examples{
+ \dontrun{
+Z<-Z.axis_profil(im,x=seq(50,75),seq(310,320))
+temp<-seq(25,445,5)
+plot(temp,Z,type="l",col="blue",xlab="Temperature (°C)",ylab="intensite")
+}
 }

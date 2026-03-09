@@ -3,7 +3,7 @@
 #' grouped_z_project
 #' merged images
 #'
-#' @inheritParams remove-noise
+#' @inheritParams remove_noise
 #' @param grouped_size [numeric] (**with default**) number of image merged in a group
 #' @param FUN  [function]  (**with default**)  function between the merged images (default FUN=sum)
 #'
@@ -12,13 +12,8 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
-#' ls<-list.files("images/",pattern = "tif$",full.names = TRUE)
-#' im<-terra::rast(ls)
-#' im%>%
-#'   as.array%>%
-#'     remove_noise(radius=5,bg=505)%>%
-#'       rast
+#'  \dontrun{
+#' tmp<-grouped_z_project(im,85)
 #' }
 
 grouped_z_project<-
